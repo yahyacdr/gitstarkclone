@@ -2,6 +2,110 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #f6f6eb;
+}
+
+@layer base {
+  :root {
+    --light-indigo: 16, 40, 75;
+    --color-base-yellow: #fedb63;
+    --color-base-purple-500: #381fd1;
+  }
+  .homepage-mark {
+    --mark-skew: 16px;
+    --mark-height: 1em;
+    --mark-overlap: 0.3em;
+    background-color: transparent;
+    background-image: linear-gradient(
+        to bottom right,
+        transparent 50%,
+        var(--color-base-yellow) 50%
+      ),
+      linear-gradient(var(--color-base-yellow), var(--color-base-yellow)),
+      linear-gradient(
+        to top left,
+        transparent 50%,
+        var(--color-base-yellow) 50%
+      );
+    background-position: 16px, 32px, 100%;
+    background-repeat: no-repeat;
+    background-size:
+      var(--mark-skew) var(--mark-height),
+      calc(100% - 48px) var(--mark-height),
+      var(--mark-skew) var(--mark-height);
+    margin-inline: calc(var(--mark-overlap) * -1);
+    padding-inline: var(--mark-overlap);
+  }
+  .homepage-mark_inverse {
+    --mark-skew: 0.25em;
+    --mark-height: 1em;
+    --mark-overlap: 0.3em;
+    background-image: linear-gradient(
+        to bottom right,
+        transparent 50%,
+        var(--color-base-purple-500) 50%
+      ),
+      linear-gradient(
+        var(--color-base-purple-500),
+        var(--color-base-purple-500)
+      ),
+      linear-gradient(
+        to top left,
+        transparent 50%,
+        var(--color-base-purple-500) 50%
+      );
+    background-position: 12px, 24px, 100%;
+    background-size:
+      var(--mark-skew) var(--mark-height),
+      calc(100% - var(--mark-skew) * 2 - 12px) var(--mark-height),
+      var(--mark-skew) var(--mark-height);
+    color: #fff;
+  }
+  .headline--1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
+  .headline--2,
+  .headline--3 {
+    font-weight: 900;
+    line-height: 1.1;
+  }
+  .headline--2 {
+    font-size: 3rem;
+    letter-spacing: -0.01em;
+  }
+  .headline--4 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  @media only screen and (max-width: 700px) {
+    .headline--1 {
+      font-size: 3rem;
+      font-weight: 900;
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+    }
+    .animate-roll {
+      animation: roll 100s linear infinite;
+    }
+  }
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
