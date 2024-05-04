@@ -3,7 +3,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Btn({ type, children, to }) {
+export default function Btn({ type, children, to, className }) {
   const base =
     "font-rubik rounded-md border-2 border-transparent align-middle transition-opacity hover:opacity-90 focus:opacity-90";
   const styles = {
@@ -17,7 +17,7 @@ export default function Btn({ type, children, to }) {
   };
   if (to)
     return (
-      <Link className={styles[type]} to={to}>
+      <Link className={styles[type] + (className || "")} to={to}>
         {children}
       </Link>
     );

@@ -15,6 +15,10 @@ export default {
         gold: "#fedb63",
         indi: "rgba(var(--light-indigo), 0.92)",
         "bg-color": "#f6f6eb",
+        "purple-base-500": "#381fd1",
+        "base-teal": "#99d6cc",
+        "link-static": "#381fd1",
+        "base-blue": "#10284b",
       },
       animation: {
         rotateFor: "rotateFor 0.15s ease-in-out forwards",
@@ -23,6 +27,8 @@ export default {
         reverseRotateBack: "reverseRotateBack 0.15s ease-in-out forwards",
         fadeIn: "fadeIn 0.15s ease-in-out forwards",
         roll: "roll 240s linear infinite",
+        "streamlining-section-fade-in":
+          "streamliningSectionFadeIn .4s ease .2s forwards",
       },
       keyframes: {
         rotateFor: {
@@ -49,6 +55,16 @@ export default {
         },
         roll: {
           "100%": { transform: "translateX(-5091px)" },
+        },
+        streamliningSectionFadeIn: {
+          "0%": {
+            opacity: ".5",
+            transform: "translateY(.25rem)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0) scale(1)",
+          },
         },
       },
     },

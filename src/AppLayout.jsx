@@ -4,6 +4,7 @@ import React from "react";
 import { useLocation, useParams } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import Header from "./ui/Header";
+import Footer from "./ui/Footer";
 const linearHeaderPages = ["support"];
 const BgBlueHeaderPages = ["/"];
 
@@ -16,6 +17,7 @@ export default function AppLayout() {
     <>
       <Header isLinear={isLinearHeader} useBgColor={isBgBlue} />
       <Outlet />
+      <Footer />
     </>
   );
 }
