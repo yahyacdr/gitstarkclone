@@ -9,12 +9,6 @@ import homepage_blob_3 from "../../assets/homepage-blob-3.png";
 export default function LandingPage() {
   return (
     <main>
-      <div className="bg-type-purple pt-12">
-        <ColorBg />
-        <div className="relative flex flex-wrap items-center justify-center gap-4 pb-12">
-          <Btn type={"gold"}>Sign up for free</Btn>
-        </div>
-      </div>
       <section className="flex justify-center p-4">
         <div className="w-[1200px] max-w-[1200px]">
           <img
@@ -174,7 +168,7 @@ export default function LandingPage() {
               experiences for all users.
             </p>
             <section className="mt-8 flex justify-center p-4">
-              <div className="border-purple-base-500 flex flex-wrap items-center justify-center gap-x-6 gap-y-4 rounded-xl border-2 border-solid bg-purple-50 p-6">
+              <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-4 rounded-xl border-2 border-solid border-purple-base-500 bg-purple-50 p-6">
                 <svg
                   role="img"
                   width="70"
@@ -205,7 +199,7 @@ export default function LandingPage() {
       <section className="relative z-10 mt-16 flex justify-center p-4 pb-0 sm:mt-36">
         <div className="relative">
           <div className="relative max-w-[1024px]">
-            <div className="bg-base-teal z-10 rounded-[40px] p-8 sm:p-16">
+            <div className="z-10 rounded-[40px] bg-base-teal p-8 sm:p-16">
               <p className="mb-8 text-center font-bold uppercase leading-[16px] text-type-purple">
                 Why Stark?
               </p>
@@ -214,70 +208,37 @@ export default function LandingPage() {
                 time-to-compliance.
               </h1>
               <div className="grid grid-cols-1 gap-x-20 gap-y-11 sm:grid-cols-2">
-                <div>
-                  <img
-                    src="https://images.getstark.co/marketing/illos/increase-velocity-illo-2023.png"
-                    alt=""
-                    className="w-20 pb-6"
-                  ></img>
-                  <h4 className="headline headline--4 mb-1.5 text-left text-type-purple">
-                    Increase Velocity
-                  </h4>
-                  <p className="text-left text-[1rem] leading-[1.7] text-indi">
-                    Stark is the only end-to-end platform that helps your team
-                    find and fix accessibility issues from design and code to
-                    the live product. All this, while being up to 10x faster
-                    than any other tool in the market.
-                  </p>
-                </div>
-                <div>
-                  <img
-                    src="https://images.getstark.co/marketing/illos/accelerate-compliance-illo-2023.png"
-                    alt=""
-                    className="w-20 pb-6"
-                  ></img>
-                  <h4 className="headline headline--4 mb-1.5 text-left text-type-purple">
-                    Accelerate Compliance
-                  </h4>
-                  <p className="text-left text-[1rem] leading-[1.7] text-indi">
-                    Reports and Insights are available in real-time for every
-                    project in Stark. Plus, time-stamped historic reports are
-                    available at any time for up-to-date compliance reporting
-                    across departments.
-                  </p>
-                </div>
-                <div>
-                  <img
-                    src="https://images.getstark.co/marketing/illos/reduce-cost-illo-2023.png"
-                    alt=""
-                    className="w-20 pb-6"
-                  ></img>
-                  <h4 className="headline headline--4 mb-1.5 text-left text-type-purple">
-                    Reduce Cost
-                  </h4>
-                  <p className="text-left text-[1rem] leading-[1.7] text-indi">
-                    Stark’s fully integrated solution enables fixing of
+                <WhyStarkCard
+                  img="https://images.getstark.co/marketing/illos/increase-velocity-illo-2023.png"
+                  h4="Increase Velocity"
+                  p={`Stark is the only end-to-end platform that helps your team
+                  find and fix accessibility issues from design and code to
+                  the live product. All this, while being up to 10x faster
+                  than any other tool in the market.`}
+                />
+                <WhyStarkCard
+                  img="https://images.getstark.co/marketing/illos/accelerate-compliance-illo-2023.png"
+                  h4="Accelerate Compliance"
+                  p={`Reports and Insights are available in real-time for every
+                  project in Stark. Plus, time-stamped historic reports are
+                  available at any time for up-to-date compliance reporting
+                  across departments.`}
+                />
+                <WhyStarkCard
+                  img="https://images.getstark.co/marketing/illos/reduce-cost-illo-2023.png"
+                  h4="Reduce Cost"
+                  p={`Stark’s fully integrated solution enables fixing of
                     accessibility issues as early as first design drafts,
                     reducing 56% of issues that typically make it into code
-                    where remediation costs can be up 100x higher.
-                  </p>
-                </div>
-                <div>
-                  <img
-                    src="https://images.getstark.co/marketing/illos/mitigate-risk-illo-2023.png"
-                    alt=""
-                    className="w-20 pb-6"
-                  ></img>
-                  <h4 className="headline headline--4 mb-1.5 text-left text-type-purple">
-                    Mitigate Risk
-                  </h4>
-                  <p className="text-left text-[1rem] leading-[1.7] text-indi">
-                    The entire Stark platform and all our integrations are built
-                    with enterprise-grade security. From SSO and our fully
-                    SOC2-certified platform stack to our zero-trust policy that
-                    underpins all our tool .
-                  </p>
-                </div>
+                    where remediation costs can be up 100x higher.`}
+                />
+                <WhyStarkCard
+                  img="https://images.getstark.co/marketing/illos/mitigate-risk-illo-2023.png"
+                  h4={"Mitigate Risk"}
+                  p={`The entire Stark platform and all our integrations are built with
+                  enterprise-grade security. From SSO and our fully SOC2-certified
+                  platform stack to our zero-trust policy that underpins all our tool .`}
+                />
               </div>
             </div>
           </div>
@@ -315,7 +276,7 @@ export default function LandingPage() {
                 <img
                   src="https://images.getstark.co/marketing/features/workflow-designer.webp?updatedAt=1697384167702"
                   alt=""
-                  className="animate-streamlining-section-fade-in absolute right-0 top-2 h-[740px] max-h-full max-w-fit opacity-0"
+                  className="absolute right-0 top-2 h-[740px] max-h-full max-w-fit animate-streamlining-section-fade-in opacity-0"
                   aria-describedby="streamline-designer"
                 ></img>
               </div>
@@ -329,7 +290,7 @@ export default function LandingPage() {
                 </h1>
                 <div className="ml-6 grid grid-cols-1">
                   <Btn
-                    className="text-link-static rounded-[20px] p-6 font-medium !no-underline transition-colors lg:bg-[#E5E0FF]"
+                    className="rounded-[20px] p-6 font-medium text-link-static !no-underline transition-colors lg:bg-[#E5E0FF]"
                     to="/for-designers"
                   >
                     <h4 className="headline headline--4 text-type-purple group-hover:underline">
@@ -341,7 +302,7 @@ export default function LandingPage() {
                     </p>
                   </Btn>
                   <Btn
-                    className="text-link-static rounded-[20px] p-6 font-medium !no-underline transition-colors lg:bg-[#E5E0FF]"
+                    className="rounded-[20px] p-6 font-medium text-link-static !no-underline transition-colors lg:bg-[#E5E0FF]"
                     to="/for-developers"
                   >
                     <h4 className="headline headline--4 text-type-purple group-hover:underline">
@@ -356,7 +317,7 @@ export default function LandingPage() {
                     </p>
                   </Btn>
                   <Btn
-                    className="text-link-static rounded-[20px] p-6 font-medium !no-underline transition-colors lg:bg-[#E5E0FF]"
+                    className="rounded-[20px] p-6 font-medium text-link-static !no-underline transition-colors lg:bg-[#E5E0FF]"
                     to="/for-product-managers"
                   >
                     <h4 className="headline headline--4 text-type-purple group-hover:underline">
@@ -371,7 +332,7 @@ export default function LandingPage() {
                     </p>
                   </Btn>
                   <Btn
-                    className="text-link-static rounded-[20px] p-6 font-medium !no-underline transition-colors lg:bg-[#E5E0FF]"
+                    className="rounded-[20px] p-6 font-medium text-link-static !no-underline transition-colors lg:bg-[#E5E0FF]"
                     to="/for-compliance-managers"
                   >
                     <h4 className="headline headline--4 text-type-purple group-hover:underline">
@@ -395,22 +356,6 @@ export default function LandingPage() {
   );
 }
 
-function ColorBg() {
-  return (
-    <div className="h-full w-screen bg-type-purple bg-cover bg-bottom bg-no-repeat">
-      <HeaderContent isCentered={true}>
-        <h1 className="max-w-[650px] text-center text-[3.5rem] font-bold leading-[1.1] -tracking-[0.1rem] text-white sm:!text-[110px] sm:!leading-[121px] md:text-7xl">
-          Super&shy;charge Access&shy;iblity
-        </h1>
-        <p className="mb-8 mt-4 max-w-[600px] px-2 text-center text-xl text-white">
-          {`The world’s best companies – from startups to the Fortune 100 – trust
-          Stark to accelerate time to digital accessibility compliance.`}
-        </p>
-      </HeaderContent>
-    </div>
-  );
-}
-
 function DefineCard({ p1, h4, p2, img }) {
   return (
     <div>
@@ -419,9 +364,7 @@ function DefineCard({ p1, h4, p2, img }) {
         {p1}
       </p>
       <h4 className="headline--4 my-3 text-type-purple">{h4}</h4>
-      <p className="max-w-[270px] text-sm leading-relaxed text-indi sm:max-w-none">
-        {p2}
-      </p>
+      <p className="text-sm leading-relaxed text-indi sm:max-w-none">{p2}</p>
     </div>
   );
 }
@@ -452,5 +395,17 @@ function ServicePanel({ img, h1, p, a, to }) {
         </div>
       </div>
     </section>
+  );
+}
+
+function WhyStarkCard({ img, h4, p }) {
+  return (
+    <div>
+      <img src={img} alt="" className="w-20 pb-6"></img>
+      <h4 className="headline headline--4 mb-1.5 text-left text-type-purple">
+        {h4}
+      </h4>
+      <p className="text-left text-[1rem] leading-[1.7] text-indi">{p}</p>
+    </div>
   );
 }

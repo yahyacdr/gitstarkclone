@@ -14,6 +14,7 @@ export default function Btn({ type, children, to, className }) {
       base +
       " bg-white text-type-purple font-bold px-2.5 py-[3px] py-0.7 uppercase text-sm",
     purple: base + " bg-type-purple text-white px-6 py-1.5",
+    custom: "",
   };
   if (to)
     return (

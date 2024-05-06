@@ -67,6 +67,13 @@ export default {
           },
         },
       },
+      backgroundImage: {
+        linearBg:
+          "url(https://images.getstark.co/marketing/headers/gradient-bg.webp)",
+      },
+      screens: {
+        desktop: "840px",
+      },
     },
   },
   plugins: [],

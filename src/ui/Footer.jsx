@@ -5,28 +5,28 @@ import Btn from "./Btn";
 
 export default function Footer() {
   return (
-    <footer className="bg-base-blue relative z-10 mt-24 flex justify-center pl-6 pr-6">
+    <footer className="relative z-10 mt-24 flex justify-center bg-base-blue pl-6 pr-6">
       <div className="mt-20 max-w-[1160px] flex-grow">
         <div className="grid grid-cols-2 gap-12 sm:grid-cols-3 md:grid-cols-4">
           <div className="footer__column flex flex-col items-start">
             <div className="flex flex-col">
               <p
-                className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white"
+                className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white"
                 role="heading"
                 aria-level="6"
               >
                 Use Cases
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white">
                 <Btn to="/for-designers/">For Designers</Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white">
                 <Btn to="/for-developers/">For Developers</Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white">
                 <Btn to="/for-product-managers/">For Product Managers</Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white">
                 <Btn to="/for-compliance-managers/">
                   For Compliance Managers
                 </Btn>
@@ -36,22 +36,22 @@ export default function Footer() {
           <div className="footer__column flex flex-col items-start">
             <div className="flex flex-col">
               <p
-                className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white"
+                className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white"
                 role="heading"
                 aria-level="6"
               >
                 Resources
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn to="/blog/">Blog</Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn to="/library/">Library</Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn to="/release-notes/">Release Notes</Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn to="/slack/">Slack Community</Btn>
               </p>
             </div>
@@ -65,16 +65,16 @@ export default function Footer() {
               >
                 Help
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn to="https://account.getstark.co">My Account</Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn to="/support/">Support Docs</Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn to="/support/contact-us/">Contact Us</Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn to="/feature-request/">Feature Requests</Btn>
               </p>
             </div>
@@ -88,16 +88,16 @@ export default function Footer() {
               >
                 Company
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn to="/suaf/">Stark Framework</Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn to="/privacy/">Privacy Policy</Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn to="/tos/">Terms of Service</Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn
                   className="mb-2 hover:underline focus:underline"
                   to="https://github.com/stark-contrast/code-of-conduct"
@@ -119,16 +119,16 @@ export default function Footer() {
               >
                 Security
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn to="/security/">Security Overview</Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn to="/cookies/">Cookie Policy</Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn to="/gdpr/">GDPR</Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn
                   className="mb-2"
                   to="https://status.getstark.co/"
@@ -150,7 +150,7 @@ export default function Footer() {
               >
                 Design Integrations
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn
                   id="footer__download--figma"
                   target="_blank"
@@ -160,7 +160,7 @@ export default function Footer() {
                   Stark for Figma
                 </Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn
                   id="footer__download--figjam"
                   target="_blank"
@@ -170,7 +170,7 @@ export default function Footer() {
                   Stark for FigJam
                 </Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn
                   id="footer__download--sketch"
                   to="/sketch/download/"
@@ -179,7 +179,7 @@ export default function Footer() {
                   Stark for Sketch
                 </Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn
                   id="footer__download--xd"
                   target="_blank"
@@ -200,7 +200,7 @@ export default function Footer() {
               >
                 Developer Integrations
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn
                   id="footer__download--chrome"
                   target="_blank"
@@ -210,7 +210,7 @@ export default function Footer() {
                   Stark for Chrome
                 </Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn
                   id="footer__download--firefox"
                   target="_blank"
@@ -220,7 +220,7 @@ export default function Footer() {
                   Stark for Firefox
                 </Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn
                   id="footer__download--edge"
                   target="_blank"
@@ -230,7 +230,7 @@ export default function Footer() {
                   Stark for Edge
                 </Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn
                   id="footer__download--safari"
                   target="_blank"
@@ -240,7 +240,7 @@ export default function Footer() {
                   Stark for Safari
                 </Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn
                   id="footer__download--arc"
                   target="_blank"
@@ -250,7 +250,7 @@ export default function Footer() {
                   Stark for Arc
                 </Btn>
               </p>
-              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white text-white hover:underline focus:underline">
+              <p className="mb-2 text-sm font-bold leading-[1.5] tracking-[1px] text-white hover:underline focus:underline">
                 <Btn
                   id="footer__download--brave"
                   target="_blank"
