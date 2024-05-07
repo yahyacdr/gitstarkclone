@@ -127,10 +127,11 @@ function PageNav({ handlePromoCard, showPromoCard }) {
         dir="ltr"
       >
         <li className="relative">
-          <button
-            className="flex h-8 items-center whitespace-nowrap rounded-md border-2 border-transparent px-2 align-middle text-sm font-black uppercase tracking-[1.12px] hover:border-white focus:border-white"
+          <Btn
+            className="flex h-8 items-center whitespace-nowrap rounded-md border-2 border-transparent px-2 align-middle text-sm font-bold uppercase tracking-[1.12px] hover:border-white focus:border-white"
             onMouseEnter={(e) => handlePromoCard("promocard1", true)}
             onMouseLeave={(e) => handlePromoCard("promocard1", false)}
+            type="custom"
           >
             Use Cases{" "}
             <svg
@@ -146,29 +147,32 @@ function PageNav({ handlePromoCard, showPromoCard }) {
                 fill="currentColor"
               ></path>
             </svg>
-          </button>
+          </Btn>
         </li>
         <li>
-          <a
-            className="nav:hover:border-white nav:focus:border-white flex h-8 items-center whitespace-nowrap rounded-md border-2 border-transparent px-2 align-middle text-sm font-black uppercase tracking-[1.12px] transition-colors"
-            href="/pricing/"
+          <Btn
+            className="nav:hover:border-white nav:focus:border-white flex h-8 items-center whitespace-nowrap rounded-md border-2 border-transparent px-2 align-middle text-sm font-bold uppercase tracking-[1.12px] transition-colors"
+            to="/pricing/"
+            type="custom"
           >
             Pricing
-          </a>
+          </Btn>
         </li>
         <li>
-          <a
-            className="nav:hover:border-white nav:focus:border-white flex h-8 items-center whitespace-nowrap rounded-md border-2 border-transparent px-2 align-middle text-sm font-black uppercase tracking-[1.12px] transition-colors"
-            href="/support/"
+          <Btn
+            className="nav:hover:border-white nav:focus:border-white flex h-8 items-center whitespace-nowrap rounded-md border-2 border-transparent px-2 align-middle text-sm font-bold uppercase tracking-[1.12px] transition-colors"
+            to="/support/"
+            type="custom"
           >
             Support
-          </a>
+          </Btn>
         </li>
         <li>
-          <button
-            className="flex h-8 items-center whitespace-nowrap rounded-md border-2 border-transparent px-2 align-middle text-sm font-black uppercase tracking-[1.12px] hover:border-white focus:border-white"
+          <Btn
+            className="flex h-8 items-center whitespace-nowrap rounded-md border-2 border-transparent px-2 align-middle text-sm font-bold uppercase tracking-[1.12px] hover:border-white focus:border-white"
             onMouseEnter={(e) => handlePromoCard("promocard2", true)}
             onMouseLeave={(e) => handlePromoCard("promocard2", false)}
+            type="custom"
           >
             Resources{" "}
             <svg
@@ -184,15 +188,16 @@ function PageNav({ handlePromoCard, showPromoCard }) {
                 fill="currentColor"
               ></path>
             </svg>
-          </button>
+          </Btn>
         </li>
         <li className="ml-auto justify-self-end">
-          <a
-            className="flex h-8 items-center whitespace-nowrap rounded-md border-2 border-transparent px-2 align-middle text-sm font-black uppercase tracking-[1.12px] hover:border-white focus:border-white"
-            href="https://account.getstark.co/sign-in"
+          <Btn
+            className="flex h-8 items-center whitespace-nowrap rounded-md border-2 border-transparent px-2 align-middle text-sm font-bold uppercase tracking-[1.12px] hover:border-white focus:border-white"
+            to="https://account.getstark.co/sign-in"
+            type="custom"
           >
             Log in
-          </a>
+          </Btn>
         </li>
       </ul>
       {showPromoCard && (

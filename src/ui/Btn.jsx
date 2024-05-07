@@ -3,7 +3,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Btn({ type, children, to, className }) {
+export default function Btn({
+  type,
+  children,
+  to,
+  className,
+  onMouseEnter,
+  onMouseLeave,
+}) {
   const base =
     "font-rubik rounded-md border-2 border-transparent align-middle transition-opacity hover:opacity-90 focus:opacity-90";
   const styles = {
@@ -14,13 +21,26 @@ export default function Btn({ type, children, to, className }) {
       base +
       " bg-white text-type-purple font-bold px-2.5 py-[3px] py-0.7 uppercase text-sm",
     purple: base + " bg-type-purple text-white px-6 py-1.5",
-    custom: "",
+    custom: "font-rubik ",
   };
   if (to)
     return (
-      <Link className={styles[type] + (className || "")} to={to}>
+      <Link
+        className={styles[type] + (className || "")}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+        to={to}
+      >
         {children}
       </Link>
     );
-  return <button className={styles[type]}>{children}</button>;
+  return (
+    <button
+      className={styles[type] + (className || "")}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      {children}
+    </button>
+  );
 }
