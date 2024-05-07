@@ -29,6 +29,7 @@ export default {
         roll: "roll 240s linear infinite",
         "streamlining-section-fade-in":
           "streamliningSectionFadeIn .4s ease .2s forwards",
+        scaleIn: "scaleIn .15s ease forwards",
       },
       keyframes: {
         rotateFor: {
@@ -64,6 +65,14 @@ export default {
           "100%": {
             opacity: "1",
             transform: "translateY(0) scale(1)",
+          },
+        },
+        scaleIn: {
+          "0%": {
+            transform: "scale(0)",
+          },
+          "100%": {
+            transform: "scale(1)",
           },
         },
       },
