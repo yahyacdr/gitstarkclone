@@ -41,7 +41,9 @@ export default function PromoCard({ card, coords, handlePromoCard }) {
         />
         <div>
           <h3 className="text-[1rem] font-semibold">{card.linkCard.title}</h3>
-          <p className="max-w-[450px] text-[0.7rem] font-bold text-type-purple underline">
+          <p
+            className={`max-w-[450px] text-[0.7rem] ${coords.card === "promocard2" ? "font-bold text-type-purple underline" : "font-medium"}`}
+          >
             {card.linkCard.desc}
           </p>
         </div>
